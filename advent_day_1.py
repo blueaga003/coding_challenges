@@ -21,10 +21,10 @@ def hash_list(numbers):
     """Use counters to iterate list."""
 
     i = 0
-    j = 1
+    j = 0
 
     while i < len(numbers) and j < len(numbers):
-        if numbers[i] + numbers[j] == 2020:
+        if numbers[i] + numbers[j] == 2020 and i != j:
             return numbers[i] * numbers[j]
         elif i == len(numbers) - 1:
             i = j - 1
